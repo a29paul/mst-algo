@@ -5,10 +5,13 @@ from .Client import Client
 app = Flask(__name__)
 client = Client()
 
-@app.route('/', methods=['POST'])
+@app.route('/mstAlgo', methods=['POST'])
 def test():
     if request.method == 'POST':
         coordinateDict = request.json
         MST = client.createMSTWithCoordinates(coordinateDict)
         finalOrderedArray = client.returnFinalOrderedArray(MST)
         return jsonify(finalOrderedArray)
+@app.route('/')
+def test():
+    return 'Hi there'
