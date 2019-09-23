@@ -1,7 +1,7 @@
-from .Graph import Graph
-from .Matrix import Matrix
-from .Graph import Vertex
-from .Prims import Prims
+from Graph import Graph
+from Matrix import Matrix
+from Graph import Vertex
+from Prims import Prims
 class Client:
     def createMSTWithCoordinates(self, coordinateDict):
         matrix = Matrix()

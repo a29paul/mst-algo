@@ -1,4 +1,4 @@
-from .Haversine import Haversine
+from Haversine import Haversine
 class Matrix:
     def createMemoryMatrix(self, n):
         memoryMatrix = []
