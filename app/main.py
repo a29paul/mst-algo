@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from io import StringIO
 import json
-from .Client import Client
+from ..Client import Client
 app = Flask(__name__)
 client = Client()
 
