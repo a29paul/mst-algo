@@ -13,5 +13,5 @@ def test():
         finalOrderedArray = client.returnFinalOrderedArray(MST)
         return jsonify(finalOrderedArray)
 @app.route('/')
-def test():
+def new():
     return 'Hi there'
